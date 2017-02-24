@@ -1,0 +1,29 @@
+
+var names =  ["names", "colt", "bob"];
+
+
+function contains(str, search, anon) {
+    var newResult = false;
+    for(var x=0;x<str.length;x++){
+        if(search === str[x]){
+            newResult = true;
+            break;
+        }
+        else{newResult = false;
+        }
+    }
+    return anon(newResult)
+
+}
+//Code Here
+
+contains(names, 'Colt', function(result){
+    if(result === true){
+        console.log('Colt is in the array');
+    } else {
+        console.log('Colt is not in the array');
+    }
+});
+
+
+console.log(contains(names, "colt"));
