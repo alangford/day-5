@@ -1,0 +1,102 @@
+internet works off a client server process
+
+
+files can be on a remote computer
+Main file doesn't contain everything it needs to render. needs to load addition files 
+all files dont finish loading at the same time.
+
+url defenintion
+http = hyper text transfer protocal
+example.com = domain name
+index.html = file
+https = secure
+
+script async = you can download muiltiple files like html bad
+script defer lets you put the script tags in any place bad
+
+put the script tags in the bottom of the body
+
+DOM document Object Model
+the dom is the staging area where all it all comes togather
+
+javascript30 website great resorce
+repl.it website great resorce
+
+
+
+keep it DRY dont repeat yourself while coding
+
+
+FUNCTIONS allways start with a verb
+
+VARIABLES name them as a noun
+
+ARRAYS name them as plural nouns
+
+
+
+Scope is the ruleset that js follow
+
+in js every function has its own scope("dictornanry")
+
+don't use global variables
+
+function checkAge(number){
+
+  if(number < 18){
+ 
+   	return "Too young";
+  
+		}
+  
+	else if(number >= 18 && number < 30){
+
+    return "Almost";
+  }
+  else if(number >= 30){
+ 
+   return "Too Old";
+ 
+ }
+
+}
+
+checkAge(15);
+
+checkAge(18);
+
+checkAge(25);
+
+checkAge(30);
+
+checkAge(35);
+
+
+
+
+function gumballMachineMaker(color){
+
+   function gumballMachine(){
+   
+ return color;
+  
+}
+  
+return gumballMachine;
+
+}
+
+var bluegumballMachine = gumballMachineMaker("blue");
+
+bluegumballMachine("blue");
+
+
+
+
+google hoisting
+
+
+
+
+
+callback is when you pass a argument to invoke a function.
